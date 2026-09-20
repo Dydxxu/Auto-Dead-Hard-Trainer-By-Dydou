@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: #080808;
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    width: 90%;
+    max-width: 500px;
+
+    padding: 30px 20px;
+
+    background: #151515;
+
+    border: 1px solid #3a3a3a;
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 0 35px rgba(120, 0, 0, 0.4);
+}
+
+h1 {
+    margin: 0;
+
+    font-size: 32px;
+
+    letter-spacing: 4px;
+}
+
+p {
+    margin-top: 8px;
+
+    color: #999;
+
+    letter-spacing: 3px;
+}
+
+#status {
+    margin: 35px 0;
+
+    min-height: 50px;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+
+    padding: 18px;
+
+    margin: 8px 0;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#startButton {
+    background: #8b0000;
+    color: white;
+}
+
+#deadHardButton {
+    background: #333;
+    color: white;
+}
+
+#deadHardButton:disabled {
+    opacity: 0.35;
+}
+
+#result {
+    min-height: 60px;
+
+    margin-top: 20px;
+
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.stats {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 8px;
+
+    margin-top: 25px;
+}
+
+.stats div {
+    padding: 12px 5px;
+
+    background: #222;
+
+    border-radius: 8px;
+
+    color: #999;
+
+    font-size: 12px;
+}
+
+.stats strong {
+    display: block;
+
+    margin-top: 5px;
+
+    color: white;
+
+    font-size: 20px;
+}
